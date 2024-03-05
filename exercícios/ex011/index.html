@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias</title>
+</head>
+<body>
+    <h1>Imagens dinamicas</h1>
+    <p>Nesse exercicio vamos testar varios tamanhos de imagens, depois tente abrir esse site em varios tamanhos diminunhindo ou aumentando a tela.</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="Imagens/fiat-fastback-p.jpg" type="image/jpg">
+        <source media="(max-width: 1050px)" srcset="Imagens/fiat-fastback-m.jpg" type="image/jpg">
+        <img src="Imagens/fiat-fastback-g.jpg" alt="Imagem de carro G">
+        <!--Dica se quiser mover uma linha de codigo, basta selecionar o que quer mover e seguarar alt e mover com seta do tecldo-->
+    </picture>
+    <h2>Reprodução de aúdio</h2>
+    <audio preload="metadata" controls>
+        <source src="midia/guanacast-33.mp3" type="audio/mpeg">
+        <source src="midia/guanacast-33.ogg" type="audio/ogg">
+        <source src="midia/guanacast-33.wav" type="audio/wav">
+    </audio>
+</body>
+</html>

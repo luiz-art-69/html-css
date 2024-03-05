@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            background-color: cadetblue;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0px;
+        }
+
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+        nav {
+            background-color: rgb(144, 202, 183);
+            padding: 3PX;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.438);
+        }
+
+        nav > a {
+            text-decoration: none;
+            margin: 10px;
+            color: white;
+            font-weight: bold;
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+        }
+
+        nav:hover {
+            box-shadow: inset 3px 2px 5px rgba(0, 0, 0, 0.466);
+        }
+
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px 0px;
+            box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.356);
+        }
+
+        article {
+            background-color: lightgray;
+            padding: 5px;
+        }
+        
+        article > aside {
+            background-color: rgb(138, 138, 138);
+        }
+
+        footer > p {
+            margin: 0px;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        #bola{
+            background-color: aliceblue;
+            width: 100px;
+            height: 100px;
+            margin: 55px auto;
+            border-radius: 100px;
+            box-shadow: inset 10px 10px 10px 20px rgba(218, 121, 209, 0.459);
+            animation: float 3s ease-in-out infinite;
+        }
+        @keyframes float{
+            0%{
+                transform: translateY(0);
+            }
+            50%{
+                transform: translateY(-25px);
+            }
+            100%{
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a> 
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <article>
+                <h2>Esportes, políticas e Ciencías</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora soluta vitae reiciendis, ipsa eaque neque. Rem, iste voluptate? Neque dignissimos harum placeat quidem excepturi! Reiciendis, odit. Doloremque odit reprehenderit itaque.</p>
+            </article>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Notícias sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum quia quas culpa rem odit error nihil ullam. Possimus fugiat deleniti vero labore! Accusamus aliquid consequatur molestias alias soluta! Pariatur, minus!</p>
+                <aside>
+                    <p>Escrito pelo josé Maria</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido pelo Luiz Vieira</p>
+    </footer>
+    <div id="bola"></div>
+</body>
+</html>
