@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ept-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha primeira tabela</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 400px;
+            height: 400px;
+            border-collapse: collapse;
+            vertical-align: bottom;
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 5px;
+            text-align: center;
+        }
+
+        tr#cabecalho {
+            background-color: rgb(42, 42, 141);
+            color: white;
+            text-align: center;
+        }
+
+        tr.linha {
+            background-color: rgb(210, 210, 235);
+        }
+
+        table#cestabasica {
+            font-weight: bold;
+        }
+
+        .numero {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabelas</h1>
+    <!-- HIERARQUIA DE TABELAS (simples)
+        TABLE = TABELA
+            TABLE ROW = Linha de tabela
+                TABLE HEADER = Cabeçalho da tabela
+                TABLE DATA = dado de tabela
+    -->
+    <table>
+        <tr> <!--Primeira linha-->
+            <td>A1
+            <td>B1
+            <td>C1
+        </tr>
+        <tr><!--Segunda linha-->
+            <td>A2
+            <td>B2
+            <td>C2
+        </tr>
+        <tr><!--Terceira linha-->
+            <td>A3
+            <td>B3
+            <td>C3
+        </tr>
+        <tr><!--Quarta linha-->
+            <td>A4
+            <td>B4
+            <td>C4
+    </table>
+    <table id="cestabasica">
+        <p>Tabela: Composição cesta basica.</p>
+        <tr id="cabecalho">
+            <td>Alimentos</td>
+            <td>Quantidade</td>
+        </tr>
+        <tr class="linha">
+            <td>Carne</td>
+            <td class="numero">4,5 Kg</td>
+        </tr>
+        <tr>
+            <td>Leite</td>
+            <td class="numero">6,0 L</td>
+        </tr>
+        <tr class="linha">
+            <td>Feijão</td>
+            <td class="numero">4,5 Kg</td>
+        </tr>
+        <tr>
+            <td>Arroz</td>
+            <td class="numero">3,6 Kg</td>
+        </tr>
+        <tr class="linha">
+            <td>Farinha</td>
+            <td class="numero">3,0 Kg</td>
+        </tr>
+        <tr>
+            <td>Batata</td>
+            <td class="numero">6,0 Kg</td>
+        </tr>
+    </table>
+    <p><strong>Fonte: DIEESE.</strong></p>
+</body>
+</html>
