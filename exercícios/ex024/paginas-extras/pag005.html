@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <a href="#" onclick="clicou()">Clique em mim.</a>
+    <!-- Adicione um elemento onde deseja exibir a saída -->
+    <div id="saida"></div>
+
+    <script>
+        function clicou() {
+            // Acesse o elemento com o ID "saida"
+            var s = window.document.getElementById("saida");
+            // Adicione uma nova linha ao conteúdo existente
+            s.innerHTML += '<p>Você clicou</p>';
+        }
+    </script>
+</body>
+</html>
