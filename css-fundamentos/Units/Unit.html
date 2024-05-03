@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unidade de medidas</title>
+    <style>
+        html {
+            font-size: 62.5%;
+            scroll-behavior: smooth;
+        }
+
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .pai {
+        /* Width relativo ao html = 300px */
+            width: 50rem;
+            height: 100vh;
+            background-color: antiquewhite;
+        }
+
+        .pai > div {
+            width: 50%;
+            height: 50rem;
+            background-color: rgb(218, 169, 107);
+        }
+
+        p {
+            /* font-size relativo ao html = 16px */
+            font-size: 1.6rem;
+        }
+
+        .bg-two {
+            background-color: lightgreen;
+        }
+    
+        .bg-three {
+            background-color: lightsalmon;
+        }
+    </style>
+</head>
+<body>
+    <a href="#one">One</a>
+    <a href="#two">Two</a>
+    <a href="#three">Three</a>
+    <div class="pai bg-one" id="one">
+        <div></div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis nesciunt soluta rem deleniti impedit, sunt iure quas, ipsam ut animi cupiditate accusantium illo a doloremque dolor obcaecati aliquam fugiat at.</p>
+    </div>
+    <div class="pai bg-two" id="two">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis nesciunt soluta rem deleniti impedit, sunt iure quas, ipsam ut animi cupiditate accusantium illo a doloremque dolor obcaecati aliquam fugiat at.</p>
+    </div>
+    <div class="pai bg-three" id="three">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis nesciunt soluta rem deleniti impedit, sunt iure quas, ipsam ut animi cupiditate accusantium illo a doloremque dolor obcaecati aliquam fugiat at.</p>
+    </div>
+</body>
+</html>
